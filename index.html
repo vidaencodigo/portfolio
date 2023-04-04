@@ -12,7 +12,7 @@
     <meta property="og:image" content="./assets/images/profile.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">´
     <link rel="icon" type="image/x-icon" href="./assets/images/icono.png">
-   
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emmanuel Lucio Urbina | Desarrollo Web</title>
     <script src="https://kit.fontawesome.com/3d68344ae4.js" crossorigin="anonymous"></script>
@@ -189,6 +189,79 @@
             font-size: 1.6rem;
 
         }
+
+        .container--action {
+            margin-top: 100px;
+            padding: 10px;
+            background-color: #1b1b32;
+            width: 100%;
+            height: 200px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .container--action h4 {
+            font-family: 'Rubik Dirt', cursive;
+            font-size: 2rem;
+            font-weight: normal;
+        }
+
+        .call-action {
+            margin-top: -5rem;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-between;
+            background-color: #0d6efd;
+            color: #fff;
+            max-width: 1060px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 0px 1px 4px 1px white;
+        }
+        .call--contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .call-a {
+            display: block;
+            color: white;
+            font-weight: bold;
+            background-color: transparent;
+            border: 2px solid white;
+            padding: 20px 32px;
+            margin: 10px;
+            border-radius: 100px;
+            transition: all 0.2s ease-in-out;
+            font-size: 15px;
+            max-width: 180.8px;
+            max-height: 74px;
+        }
+
+        .call-a:hover {
+            background-color: #fff;
+            color: #1b1b32;
+        }
+
+        @media screen and (max-width: 600px) {
+            .content p:nth-child(2) {
+                font-size: 1.2rem;
+            }
+            .call-action{
+                display: flex;
+                flex-direction: column;
+                gap:16px;
+                padding: 10px;
+                
+            }
+        }
     </style>
 </head>
 
@@ -237,10 +310,10 @@
             <p>
                 Hola
 
-                Tengo conocimientos en PHP, CSS, HTML, JS para el desarrollo web, al igual que conocimientos básicos en
-                REACT, combino estos conocimientos técnicos con habilidades de comunicación, trato a cliente, resolución
-                de problemas. También he participado en una organización civil, enseñando a niños de 6-12 a programar,
-                usando scratch, aquí creamos juegos e historias interactivas.
+                Experiencia en desarrollo web, en aplicaciones de control de inventarios (sector automotive) y puntos de
+                venta (cafetería industrial y papelería), implementado la lógica de negocio de cada cliente, trabajo con
+                php puro y con el framework leaft de php, experiencia en impartir cursos de programación a niños en una
+                organización civil donde se les enseñaba a crear historias y juegos sencillos utilizando scratch.
             </p>
         </div>
     </section>
@@ -299,8 +372,8 @@
                         <span class="pill">REACTJS</span>
                     </div>
                     <div class="acciones">
-                        <a class="act--btn" href="https://github.com/vidaencodigo/Simple-React-Calculator" title="Repositorio"><i
-                                class="fa-brands fa-github fa-2xl"></i></a>
+                        <a class="act--btn" href="https://github.com/vidaencodigo/Simple-React-Calculator"
+                            title="Repositorio"><i class="fa-brands fa-github fa-2xl"></i></a>
                         <a class="act--btn" href="https://exquisite-kringle-6d15ca.netlify.app/" title="Demo"><i
                                 class="fa-solid fa-earth-americas fa-2xl"></i></a>
                     </div>
@@ -333,7 +406,20 @@
                 </div>
             </div>
 
-            
+
+        </article>
+    </section>
+
+    <section class="container--action">
+        <article class="call-action">
+            <h4>Hablemos</h4>
+            <p>
+                Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.
+            </p>
+            <div class="call--contact">
+                <a href="mailto:emmanuel.lucio.urbina@gmail.com" class="call-a">Contacto <i
+                        class="fa-solid fa-envelope-circle-check fa-2xl"></i></a>
+            </div>
         </article>
     </section>
     <script>
